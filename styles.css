@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+
+    /* Primary */
+
+    /* - Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%) */
+
+    /* Neutral */
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 50% 120%;
+    background-color: var(--Very-Dark-Blue);
+    /* background-size: contain; */
+    background-size: 100% 60%;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icons {
+    background-color: var(--Dark-Blue);
+    width: 300px;
+    padding: 40px;
+    border-top-right-radius: 85px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 20px;
+}
+
+/* p {
+    color: var(--Grayish-Blue)
+} */
+
+#icons img:nth-child(1){
+    display: block;
+    margin-bottom: 20px;
+}
+
+#icons img:nth-child(2) {
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+#icons img:nth-child(3) {
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+#icons img:nth-child(4) {
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+#storage-space {
+    background-color: var(--Dark-Blue);
+    width: 600px;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 130px;
+    position: relative;
+    top: 25px;
+    /* margin: 20px; */
+    /* height: 100px; */
+}
+
+#storage-space div:nth-of-type(1) {
+    height: 20px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 10px;
+    position: relative;
+    top: -40px;
+}
+
+#storage-space div:nth-of-type(2) {
+    height: 16px;
+    width: 80%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%) 30%, hsl(335, 100%, 65%) 70%);
+    position: relative;
+    top: -58px;
+    left: 2px;
+}
+
+#storage-space div:nth-of-type(3) {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -72px;
+    left: 78%;
+}
+
+#storage-space div:nth-of-type(4) {
+    display: flex;
+    justify-content: space-between;
+    /* margin: -20px; */
+    position: relative;
+    top: -60px;
+    color: var(--Pale-Blue);
+}
+
+#storage-space > p:nth-child(1) {
+    color: var(--Grayish-Blue); 
+    position: relative;
+    top: 10px;
+}
+
+#storage-space span {
+    color: var(--Pale-Blue);
+} 
+
+#remaining-storage {
+    background-color: white;
+    height: 65px;
+    text-align: center;
+    width: 155px;
+    padding-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: -80px;
+    left: 400px;
+    border-bottom-right-radius: 0px;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+}
+
+#remaining-storage::after {
+    content: "     ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0px;
+	bottom: -20px;
+
+    /* border-right: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 16px solid white; */
+
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent white transparent transparent;
+}
+
+#remaining-storage span {
+    color: var(--Very-Dark-Blue);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+        /* display: block; */
+        flex-direction: column;
+        background-size: 100% 100%;
+    }
+
+
+    #storage-space {
+        width: 300px;
+        margin-right: 30px;
+        height: 150px;
+        /* padding-bottom: 10px; */
+    }
+
+    #remaining-storage::after {
+        opacity: 0;
+        /* border-bottom-right-radius: 10px; */
+    }
+    #remaining-storage {
+        border-bottom-right-radius: 10px;
+        top: 80px;
+        left: 55px;
+    }
+    #storage-space div:nth-of-type(3) {
+        left: 75.5%;
+    }
+}
