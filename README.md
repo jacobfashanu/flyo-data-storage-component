@@ -14,7 +14,7 @@ Users should be able to:
 - Live Site URL: [https://jacobf-flyo-data-storage.netlify.app/](https://jacobf-flyo-data-storage.netlify.app/)
 - Solution submission URL: [https://www.frontendmentor.io/solutions/htmlcss-7mHXNmPf9u](https://www.frontendmentor.io/solutions/htmlcss-7mHXNmPf9u)
 
-### Screenshot
+### Screenshots
 
 ![](./Desktop-view.png)
 ![](./Mobile-view.png)
