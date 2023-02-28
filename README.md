@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://jacobf-business-card-preview.netlify.app/](https://jacobf-business-card-preview.netlify.app/)
-- Solution submission URL: [https://www.frontendmentor.io/solutions/html-css-TzZZBAj4ez](https://www.frontendmentor.io/solutions/html-css-TzZZBAj4ez)
+- Live Site URL: [https://jacobf-flyo-data-storage.netlify.app/](https://jacobf-flyo-data-storage.netlify.app/)
+- Solution submission URL: [https://www.frontendmentor.io/solutions/htmlcss-7mHXNmPf9u](https://www.frontendmentor.io/solutions/htmlcss-7mHXNmPf9u)
 
 ### Screenshot
 
